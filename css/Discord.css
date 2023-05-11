@@ -1,0 +1,290 @@
+@charset "UTF-8" ; 
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito+Sans:wght@800&family=Open+Sans:wght@400;600;700;800&display=swap');
+
+/*
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Open Sans', sans-serif; 
+  */ 
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+p  { 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #23272A;
+}
+
+header {
+    background-image: url(../imagens-cll/header-cll.png);
+    max-width: 100%;
+        background-size: cover;
+        background-position: center;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+   padding: 50px 30px 0px 40px;
+}
+
+.titulo-header {
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    font-weight: 400;
+    font-size: 32px;
+    padding-right: 20px;
+}
+
+.subtitulo-header {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.botao {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin: 50px;
+}
+
+.button-header1 {
+    background-color: white;
+    color: #23272A;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    border: 10px solid transparent;
+    border-radius: 28px;
+    height: 50px;
+}
+
+.button-header1:hover {
+    color: #404EED;
+    box-shadow: 20px  #404EED;
+    transform: 0.5s;
+}
+
+.button-header2 {
+    background-color: #23272A;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    border: 10px solid transparent;
+    border-radius: 28px;
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+.button-header2:hover {
+    background-color: rgb(71, 71, 71);
+    box-shadow: 20px  #000000;
+    transform: 0.5s;
+}
+
+main {
+    padding: 5px 23px 20px 23px;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+    color: #23272A;
+}
+
+.paragrafo-igual , .paragrafo-diferente {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.imgp , .imgfinal {
+    width: 100%; 
+}
+
+#h1black {
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    color: #23272A;
+    padding-top: 27px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-reverso {
+    display: flex;
+    flex-direction: column; 
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #23272A;
+    height: 140px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > p {
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 32px;
+    padding-left: 18px;
+}
+
+.disc {
+    width: 40px;
+    height: 30px;
+}
+
+@media screen and (min-width: 720px) {
+    body {
+        max-width: 1200px;
+    }
+
+    header {
+        background-image: url("../imagens-pc/header.png");
+        max-width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .titulo-header {
+        font-size: 56px;
+        line-height: 56px;
+        padding: 94px 150px 0 150px;
+    }
+
+    .titulos p {
+        padding: 0px 100px;
+    }
+
+    .titulos {
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .botao {
+        flex-direction: row;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .texto h3{
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0px;
+    }
+
+    .texto-reverso h3{
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0px;
+    }
+
+    .paragrafos{
+        align-items: center;
+    }
+
+    .texto {
+        padding-right: 50px;
+    }
+
+    .paragrafo-igual {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .paragrafo-igual img  {
+        width: 50vw;
+        padding-left: 50px;
+
+    }
+
+    .texto-reverso {
+        padding-left: 50px;
+    }
+    .paragrafo-diferente {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .paragrafo-diferente img  {
+        width: 50vw;
+        padding-right: 50px;
+    }
+
+    .imgfinal {
+        max-width: 80vh;
+        align-items: center;
+    }
+
+    #h1black {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .paragrafo4 {
+        text-align: center;
+        padding: 0px 30px 0px 30px;
+    }
+
+    footer {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 980px) { 
+    .titulo-header {
+       padding: 0px 301px;
+    }
+
+    .titulos p {
+        padding: 0px 200px;
+    }
+
+    .texto h3 {
+        font-size: 40px;
+        line-height: 54px;
+        padding-right: 3vh;
+        margin: 0px;
+    }
+    .texto p {
+        font-size: 16px;
+        line-height: 21px;
+        padding-left: 3vh;     
+    }
+
+    .texto-reverso h3 {
+        font-size: 40px;
+        line-height: 54px;
+        padding-left: 3vh;
+        margin: 0px;
+    }
+    .texto-reverso p {
+        font-size: 16px;
+        line-height: 21px;
+        padding-right: 3vh;
+    }
+    .paragrafo4 p {
+        padding: 0px 90px;
+    }
+
+}
